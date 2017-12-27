@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html style="fontSize: 62.5%;background-color: rgb(29, 29, 53);">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>qos</title>
+  </head>
+  <body style="margin: 0px">
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script type="text/javascript">
+    !(function(doc, win) {
+        var docEle = doc.documentElement,
+        evt = "onorientationchange" in window ? "orientationchange" : "resize",
+        fn = function() {
+          var width = docEle.clientWidth;
+          width && (docEle.style.fontSize = 20 / 1920 * width + "px");
+
+        };
+
+        fn();
+
+        win.addEventListener(evt, fn, false);
+        doc.addEventListener("DOMContentLoaded", fn, false);
+
+      }(document, window));
+  </script>
+</html>
